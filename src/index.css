@@ -1,11 +1,15 @@
 :root {
+    --grey-light: #d4d4d4;
+    --grey-dark: #aeaeae;
+
+    --blue-light: #2b428a;
+    --blue-dark: #17317f;
+
+    --yellow-default: #fedc07;
+
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -20,6 +24,24 @@ body {
     min-width: 100dvw;
     min-height: 100dvh;
 
-    background-image: url('./assets/background.png');
+    /* this is resolved automatically by vite during bundling */
+    background-image: url('/assets/background.png');
     background-repeat: repeat;
+}
+
+h1 {
+    margin: 0;
+    color: var(--blue-light);
+}
+
+h2 {
+    margin: 0;
+    color: var(--grey-dark);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+    font-size: 10pt;
 }
