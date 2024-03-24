@@ -1,6 +1,6 @@
 import './Button.css'
 
-import { FC, HTMLProps, PropsWithChildren, ReactNode } from 'react'
+import { FC, HTMLProps, PropsWithChildren, ReactNode, useMemo } from 'react'
 
 export interface ButtonProps extends HTMLProps<HTMLButtonElement> {
     variant?: 'primary' | 'secondary'
@@ -15,13 +15,13 @@ export const Button: FC<PropsWithChildren<ButtonProps>> = ({
     children,
     ...props
 }) => {
+    const classes = useMemo(
+        () => [variant, props.className].filter(Boolean).join(' '),
+        [variant, props.className]
+    )
+
     return (
-        <button
-            {...props}
-            type="button"
-            className={`${variant} ${props.className}`}
-            data-active={isActive}
-        >
+        <button {...props} type="button" className={classes} data-active={isActive}>
             <span>{children}</span>
             {icon}
         </button>

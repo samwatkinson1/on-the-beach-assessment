@@ -5,11 +5,17 @@ div.card {
         display: flex;
         position: relative;
 
+        & > img {
+            flex: 70%;
+            aspect-ratio: 16 / 9;
+        }
+
         & > .card__details {
             display: inherit;
             flex-direction: column;
+            justify-content: space-between;
             padding: 1.25rem;
-            width: 100%;
+            flex: 30%;
 
             .card__stars {
                 margin: 0.5rem 0;

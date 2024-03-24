@@ -2,15 +2,15 @@ import { useMemo } from 'react'
 
 import { Data } from '../types.ts'
 
-function sortByAlpha(data: Data[]) {
+export function sortByAlpha(data: Data[]) {
     return data.sort((a, b) => a.name.localeCompare(b.name))
 }
 
-function sortByPrice(data: Data[]) {
+export function sortByPrice(data: Data[]) {
     return data.sort((a, b) => b.price.subtotal - a.price.subtotal)
 }
 
-function sortByStar(data: Data[]) {
+export function sortByStar(data: Data[]) {
     return data.sort((a, b) => b.stars - a.stars)
 }
 

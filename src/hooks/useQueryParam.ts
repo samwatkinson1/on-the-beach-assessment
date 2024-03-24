@@ -1,21 +1,18 @@
 import { useCallback, useEffect, useState } from 'react'
 
-export type UseQueryParam = <T = string>(
+export const useQueryParam = <T = string>(
     param: string,
-    defaultValue?: T | null
-) => [T | null, (value: T | null) => void]
-
-export const useQueryParam: UseQueryParam = (param, defaultValue = null) => {
-    const location = window.location
-
-    const [value, setValue] = useState<typeof param | null>(defaultValue)
+    defaultValue: T | null = null
+): [T | null, (value: T | null) => void] => {
+    const [value, setValue] = useState<T | null>(defaultValue)
 
     const onChange = useCallback(
-        (value: typeof param | null) => {
-            history.pushState({}, '', `${location.pathname}?${param}=${value}`)
+        (value: T | null) => {
+            const pathname = window.location.pathname
+            window.history.pushState({}, '', `${pathname}?${param}=${value}`)
             setValue(value)
         },
-        [location.pathname, param]
+        [param]
     )
 
     useEffect(() => {

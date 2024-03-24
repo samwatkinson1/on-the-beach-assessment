@@ -50,7 +50,7 @@ function App() {
             </aside>
             <main>
                 {sorted.map(item => (
-                    <Card key={item.id} data={item} />
+                    <Card key={item.id} data={item} data-testid="card" />
                 ))}
             </main>
         </>

@@ -11,6 +11,18 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     plugins: ['react-refresh', 'simple-import-sort'],
     rules: {
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            {
+                args: 'all',
+                argsIgnorePattern: '^_',
+                caughtErrors: 'all',
+                caughtErrorsIgnorePattern: '^_',
+                destructuredArrayIgnorePattern: '^_',
+                varsIgnorePattern: '^_',
+                ignoreRestSiblings: true
+            }
+        ],
         'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
         'simple-import-sort/imports': 'error',
         'simple-import-sort/exports': 'error'
