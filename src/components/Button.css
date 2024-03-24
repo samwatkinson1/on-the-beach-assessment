@@ -1,0 +1,58 @@
+button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    cursor: pointer;
+
+    font-size: 11pt;
+
+    &.primary {
+        border: none;
+
+        background: white;
+        color: var(--blue-dark);
+
+        strong {
+            color: var(--blue-dark);
+        }
+
+        &[data-active='true'] {
+            background: var(--blue-dark);
+            color: white;
+
+            i {
+                color: white;
+            }
+
+            strong {
+                color: white;
+            }
+        }
+
+        &:hover {
+            background: var(--blue-dark);
+            color: white;
+
+            i {
+                color: white;
+            }
+
+            strong {
+                color: white;
+            }
+        }
+    }
+
+    &.secondary {
+        border: none;
+        border-radius: 4px;
+
+        background: var(--yellow-default);
+        color: var(--blue-dark);
+
+        padding: 1rem 1.5rem;
+
+        font-weight: bold;
+    }
+}
