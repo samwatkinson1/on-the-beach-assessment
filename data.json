@@ -23,7 +23,7 @@
         "name": "Aguamarina Golf Hotel",
         "location": "Costa Adeje, Tenerife",
         "img": "/assets/hotel-image-2.png",
-        "stars": 5,
+        "stars": 3,
         "departure_airport": "Liverpool",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus ultrices leo, vel tristique purus. Quisque nec enim ut nulla euismod tincidunt. Donec sagittis nibh diam, nec finibus nunc ultrices quis. Maecenas nulla velit, ornare imperdiet placerat eget, malesuada ac erat.",
         "occupants": {
@@ -41,7 +41,7 @@
         "name": "Las Piramides Hotel",
         "location": "Costa Adeje, Tenerife",
         "img": "/assets/hotel-image-3.png",
-        "stars": 5,
+        "stars": 4,
         "departure_airport": "Manchester",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus ultrices leo, vel tristique purus. Quisque nec enim ut nulla euismod tincidunt. Donec sagittis nibh diam, nec finibus nunc ultrices quis. Maecenas nulla velit, ornare imperdiet placerat eget, malesuada ac erat.",
         "occupants": {
