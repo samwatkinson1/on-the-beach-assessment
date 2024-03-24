@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "name": "Iberostar Grand Salome",
+        "location": "Costa Adeje, Tenerife",
+        "img": "/assets/hotel-image-1.png",
+        "stars": 5,
+        "departure_airport": "East Midlands",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus ultrices leo, vel tristique purus. Quisque nec enim ut nulla euismod tincidunt. Donec sagittis nibh diam, nec finibus nunc ultrices quis. Maecenas nulla velit, ornare imperdiet placerat eget, malesuada ac erat.",
+        "occupants": {
+            "adults": 2,
+            "children": 2,
+            "infants": 1
+        },
+        "price": {
+            "duration": 7,
+            "date": "2019-07-03",
+            "subtotal": 1136.5
+        }
+    },
+    {
+        "id": "2",
+        "name": "Aguamarina Golf Hotel",
+        "location": "Costa Adeje, Tenerife",
+        "img": "/assets/hotel-image-2.png",
+        "stars": 5,
+        "departure_airport": "Liverpool",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus ultrices leo, vel tristique purus. Quisque nec enim ut nulla euismod tincidunt. Donec sagittis nibh diam, nec finibus nunc ultrices quis. Maecenas nulla velit, ornare imperdiet placerat eget, malesuada ac erat.",
+        "occupants": {
+            "adults": 2,
+            "children": 1
+        },
+        "price": {
+            "duration": 7,
+            "date": "2019-05-27",
+            "subtotal": 696.8
+        }
+    },
+    {
+        "id": "3",
+        "name": "Las Piramides Hotel",
+        "location": "Costa Adeje, Tenerife",
+        "img": "/assets/hotel-image-3.png",
+        "stars": 5,
+        "departure_airport": "Manchester",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus ultrices leo, vel tristique purus. Quisque nec enim ut nulla euismod tincidunt. Donec sagittis nibh diam, nec finibus nunc ultrices quis. Maecenas nulla velit, ornare imperdiet placerat eget, malesuada ac erat.",
+        "occupants": {
+            "adults": 2,
+            "children": 2
+        },
+        "price": {
+            "duration": 7,
+            "date": "2019-07-03",
+            "subtotal": 499.99
+        }
+    }
+]
